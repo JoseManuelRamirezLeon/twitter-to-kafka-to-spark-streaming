@@ -16,10 +16,8 @@ from kafka import KafkaConsumer
 #from cassandra.cluster import Cluster
 
 # These access token and secret are obtained when applying for a twitter api:
-access_token = "760357019001954304-LsDTXYyzAREMFSnLvcvlJYB6AClh9sj"
-access_token_secret =  "zN57Xc9I0HkugQC113X43F81PxAY7Dyos6GXXGZcXiRyl"
-consumer_key =  "zmXr9bDWoRFzQtTevEL9CUted"
-consumer_secret =  "tBlBFQtoDV3MdWD1DtDI5A6DPjdcAyQA0mgI8JFoOlXXyyoQoS"
+[access_token, access_token_secret, consumer_key, consumer_secret] = set_up_twitter_credentials()
+
 
 
 # This is a class to create a streamlistener, which we will use later to create a twitter stream:
